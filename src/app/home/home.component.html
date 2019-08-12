@@ -1,0 +1,115 @@
+<div class="container-fluid" id="main-header">
+  <div class="row  justify-content-md-center" >
+    <div class="col-md-6 mt-5 pt-3">
+        <h1 class="mt-5  text-center" id="header-tagline">Get Weather <span style="color:#FE4A49">Forcasts From </span><br/>Every Part Of The World!!</h1>
+        <br/>
+        <form>
+          <div class="input-group" id="scaleup">
+              <input type="text" class="form-control" placeholder="Enter name of city" id="searchQuery" name="cityName" [(ngModel)]="cityName">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1" (click)="getWeatherdata()"><i class="fa fa-search"></i></span>
+              </div>
+          </div>
+        </form>
+    </div>
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7 mt-5">
+       <h2 class="about-header">plan your day to day adventure With Accurate Weather Details.</h2>
+        <br/>
+       <kbd>
+          Dealing with the weather is hard enough.
+          Seeing the forecast should be easy.
+       </kbd>
+       <br/>
+       <p class=" mt-5 card card-body" id="about-text">
+          There are a million weather apps out there, and they're overloaded with ugly ads, confusing interfaces, and stupid gimmicks. We think that stinks, so we made the antidote: a straightforward app that’s a joy to use.
+       </p>
+    </div>
+    <div class="col-md-5 mt-5 pt-4">
+       <div class="">
+     <img src="../../assets/plan your adventure.jpg" class="img-thumbnail" width="500px" height="500px" id="main-image" >
+        
+       </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+     <h2 class="mt-5 mb-5 about-header">Major Weather Events</h2>
+  <div class="row">
+   <div class="col-md-12">
+      <div class="card-deck" id="WeatherEvents">
+          <div class="card">
+            <img class="card-img-top" src="../../assets/card-6.jpg" alt="Card image cap" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">Hurricane Katrina </h5>
+              <p class="card-text">Katrina was the sixth-most powerful Atlantic hurricane ever recorded...</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../../assets/card-5.jpg" alt="Card image cap" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">The Dark Day Of 1780</h5>
+              <p class="card-text">It was a day so dark that: “Birds ceased to sing, and all the...</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../../assets/card-4.jpg" alt="Card image cap" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">1816: The Year Without a Summer</h5>
+              <p class="card-text">1816 has gone down in Almanac fame as the “poverty year,” and...</p>
+            </div>
+          </div>
+        </div>
+   </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+ <div class="row">
+  <div class="col-md-12">
+     <div class="card-deck" id="WeatherEvents">
+         <div class="card">
+           <img class="card-img-top" src="../../assets/card-1.jpg" alt="Card image cap" height="200px">
+           <div class="card-body">
+             <h5 class="card-title">Flood in  Ethiopia</h5>
+             <p class="card-text">Ethiopia with increasing frequency (EM-DAT, n.d.)...</p>
+           </div>
+         </div>
+         <div class="card">
+           <img class="card-img-top" src="../../assets/card-2.png" alt="Card image cap" height="200px">
+           <div class="card-body">
+             <h5 class="card-title">March nor’easter onslaught</h5>
+             <p class="card-text">As February ended, signals were obvious that East Coast...</p>
+           </div>
+         </div>
+         <div class="card">
+           <img class="card-img-top" src="../../assets/card-3.jpg" alt="Card image cap" height="200px">
+           <div class="card-body">
+             <h5 class="card-title">The great floods of Hurricane Florence</h5>
+             <p class="card-text">WPC has been developing of a tropical cyclone rainfall database for the U.S...</p>
+             
+           </div>
+         </div>
+       </div>
+  </div>
+ </div>
+</div>
+
+
+<!-- footer -->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 mt-5" id="footer">
+          <h4 class="text-center footer-text">Made with <i class="fa fa-heart" aria-hidden="true"></i> by Abhinav Akhil</h4>
+          <h4 class="text-center" id="social-icons-main">
+            <i class="fa fa-linkedin-square social-icons" aria-hidden="true" ></i>
+            <i class="fa fa-facebook-official social-icons" aria-hidden="true"></i>
+            <i class="fa fa-instagram social-icons" aria-hidden="true"></i>
+          </h4>
+        </div>
+    </div>
+</div>

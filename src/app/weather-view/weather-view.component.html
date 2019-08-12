@@ -1,0 +1,100 @@
+<div class="mt-5 pt-5 container">
+  <div class="row">
+    <div class="col-md-12">
+        <div class="loader" *ngIf="loader">
+            <svg>
+              <use href="assets/icons.svg#icon-cw"></use>
+            </svg>
+          </div>
+      <div class="card bg-light text-black" *ngIf="!loader">
+        <img src="../../assets/weather-back-3.jpg" class="card-img" alt="..." height="350px">
+        <!-- card iamge overlay -->
+        <div class="card-img-overlay text-white">
+          <h5 class="card-title"></h5>
+          <!-- {{weatherData.main.pressure}} -->
+          <h1 class="card-text" id="Weatherdegree">{{weatherData.main.temp |number:'1.0-0'}}&deg;C</h1>
+          <p class="card-text" id="weatherDesc">{{weatherData.weather[0].description | uppercase}}</p>
+          <div class="row">
+            <div class="col-md-2">
+              <p class="humidity">Humidity</p>
+              <p class="text-center" id="humiditydata">{{weatherData.main.humidity}} %</p>
+            </div>
+            <div class="col-md-1">
+              <div id="mainvertical"></div>
+            </div>
+            <div class="col-md-1">
+                <p class="wind">Wind</p>
+                <p class="text-center" id="wind-value">{{weatherData.wind.speed}} K/Hr</p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h2 id="searchedcityName">{{weatherData.name | titlecase}}</h2>
+            </div>
+          </div>
+
+        </div>
+        <!-- card body -->
+        <div class="card-body">
+           <div class="row">
+             <div class="col-md-5">
+                <h5 class="card-title"style="color:#001730"><i class="fa fa-eercast" aria-hidden="true"></i> Quotes</h5>
+                <div class="row mt-4">
+                  <div class="col-md-8">
+                      <p class="card-text mt-1" id="quotedata">{{myQuoteData[0]?.quote}}</p>
+                  </div>
+                  <div class="col-md-4">
+                      <p class="card-text" ><small class="text-muted"><img src="{{myQuoteData[0]?.image}}" height="150px" ></small></p>
+                  
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-1" id="vertical-main">
+             <div id="vertical-line"></div>
+             </div>
+             <div class="col-md-6">
+               <div class="row mt-2">
+                 <div class="col-md-3">
+                    <h5 class="card-title"><img src="http://openweathermap.org/img/w/{{weatherData.weather[0].icon}}.png" width="100px" height="100px" id="logo-wweather"></h5>
+                  
+                 </div>
+                  <div class="col-md-3" id="sunrise">
+                    <h5 class="Textcolor">Sunshine</h5>
+                    <p  class="Textcolor">{{weatherData.sys.sunrise |sencon }}</p>
+                  </div>
+                  <div class="col-md-3" id="sunset">
+                      <h5  class="Textcolor">Sunset</h5>
+                      <p  class="Textcolor">{{weatherData.sys.sunset |sencon }}</p>
+                  </div>
+                  <div class="col-md-3" id="pressure">
+                    <h5  class="Textcolor">Pressure</h5>
+                    <p  class="Textcolor">{{weatherData.main.pressure}} pa</p>
+                  </div>
+               </div> 
+               <!-- 2nd row -->
+                <div class="row">
+                    <div class="col-md-3" id="maxtemp">
+                        <h5  class="Textcolor">Maxtemp</h5>
+                        <p  class="Textcolor">{{weatherData.main.temp_max}}&deg;C</p>
+                    </div>
+                    <div class="col-md-3" id="mintemp">
+                        <h5  class="Textcolor">Mintemp</h5>
+                        <p  class="Textcolor">{{weatherData.main.temp_min}}&deg;C</p>
+                    </div>
+                     <div class="col-md-3" id="country">
+                         <h5  class="Textcolor">Country</h5>
+                         <p  class="Textcolor">{{weatherData.sys.country |sencon }}</p>
+                     </div>
+                     <div class="col-md-3" id="time">
+                       <h5  class="Textcolor">Time</h5>
+                       <p  class="Textcolor">{{date |date:'dd/MM/yyyy'}}</p>
+                     </div>
+                  </div>
+             </div>
+           </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

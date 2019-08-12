@@ -4,14 +4,16 @@
 
 export const environment = {
   production: false,
-  // firebase:{
-  //   apiKey: "AIzaSyDg3JcXXtSt0XQ6T1Dy6FielX9n5yxuDjs",
-  //   authDomain: "weather-92f36.firebaseapp.com",
-  //   databaseURL: "https://weather-92f36.firebaseio.com",
-  //   projectId: "weather-92f36",
-  //   storageBucket: "",
-  //   messagingSenderId: "590407299663"
-  // }
+  apiKey:"be0ea45dda9de40737dbad5fe32e3f99",
+  firebase:{
+    apiKey: "AIzaSyDFtRXY7hbb-nKrsDrTMXnXYeNCHLaa8AM",
+    authDomain: "quill-weatherapp.firebaseapp.com",
+    databaseURL: "https://quill-weatherapp.firebaseio.com",
+    projectId: "quill-weatherapp",
+    storageBucket: "",
+    messagingSenderId: "1004917878173",
+    appId: "1:1004917878173:web:f3d29a847a30add9"
+  }
 
 };
 

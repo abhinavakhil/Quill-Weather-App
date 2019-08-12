@@ -1,0 +1,84 @@
+/* @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Atomic+Age&display=swap');
+#header-tagline{
+  font-size:43px;
+  font-family: Helvetica;
+  color:#2A3166;
+  /* a64ac9 */
+}
+#main-header{
+    background-image:url('../../assets/back_img.jpg');
+    height:91vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.input-group-text{
+    background-color:#ffc83f;
+    border:solid 1px #ffc83f;
+}
+.fa-search:hover{
+ color:#fff;
+}
+#searchQuery{
+    border:solid 1px #eee;
+    box-shadow: 2px;
+}
+/* #scaleup:hover{
+    transform:scale(2);
+} */
+.about-header{
+    font-size:30px;
+    font-family: 'Yatra One', cursive;
+    text-transform: capitalize;
+}
+.about-text{
+    padding:20px;
+    font-family: 'Yatra One', cursive;
+    font-size:20px;
+    text-align: justify; 
+    text-transform: capitalize;
+}
+#footer{
+    background-color:#a64ac9;
+    padding:20px;
+}
+.footer-text{
+    font-family: 'Yatra One', cursive;
+    color:#fff;
+}
+.fa-heart{
+   color:red;
+}
+.social-icons{
+ padding:10px;
+}
+.fa-linkedin-square {
+    color:blue
+}
+.fa-facebook-official{
+    color:rgb(23, 170, 219);
+}
+.fa-instagram{
+    color:red;
+}
+.card-text{
+    text-transform: capitalize;
+}
+.card-title{
+    text-transform: capitalize;
+}
+#main-image{
+    transition-duration: 1s;
+}
+#main-image:hover{
+    background-color:#ffc83f;
+    border-radius:1em;
+    transform:rotate(-5deg);
+}
+
+@media all and (max-width: 660px) {
+#scaleup:hover{
+    transform:scale(1);
+}
+}
